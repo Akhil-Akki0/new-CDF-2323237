@@ -1,0 +1,6 @@
+{
+  "name": "AetherCFD",
+  "description": "The most accessible, transparent and validated CFD workspace in the browser: instant, no login, live results, one-click Excel export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

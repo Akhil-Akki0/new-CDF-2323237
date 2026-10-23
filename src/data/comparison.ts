@@ -1,0 +1,68 @@
+import { ComparisonPlatform } from '../types';
+
+export const COMPARISON_DATA: ComparisonPlatform[] = [
+  {
+    category: 'Access & Speed',
+    feature: 'Time to First Solution',
+    aetherCfd: 'Instant (< 1.5 seconds, zero install / zero spinup)',
+    traditionalAnsys: '15 - 45 min (License checkout, mesh generation, solver start)',
+    cloudSimScale: '3 - 8 min (Cloud node allocation, mesh queue)',
+    luminaryNavier: '1 - 5 min (Cloud container provisioning)',
+  },
+  {
+    category: 'Access & Speed',
+    feature: 'Authentication & Privacy',
+    aetherCfd: 'No login required · 100% Client-Side Web Worker execution',
+    traditionalAnsys: 'Hardware dongle / corporate FlexLM VPN license server',
+    cloudSimScale: 'Mandatory login & geometry uploaded to remote cloud',
+    luminaryNavier: 'Mandatory cloud account & proprietary model training consent',
+  },
+  {
+    category: 'Access & Speed',
+    feature: 'Live Parameter Scrubbing',
+    aetherCfd: 'Real-time interactive canvas (drag geometry, adjust Re live)',
+    traditionalAnsys: 'Batch script re-run / full mesh re-computation',
+    cloudSimScale: 'Re-queue job per parameter change',
+    luminaryNavier: 'AI inference forward pass (approximate)',
+  },
+  {
+    category: 'Verification & Code',
+    feature: 'Governing Equations Transparency',
+    aetherCfd: 'Open-access D2Q9 Lattice Boltzmann & Navier-Stokes formulation',
+    traditionalAnsys: 'Proprietary closed-source commercial solver',
+    cloudSimScale: 'OpenFOAM wrapper (partially transparent backend)',
+    luminaryNavier: 'Black-box neural surrogate physics predictions',
+  },
+  {
+    category: 'Verification & Code',
+    feature: 'Canonical Benchmark Verification',
+    aetherCfd: 'Built-in overlay vs Ghia 1982, Williamson 1989, Poiseuille',
+    traditionalAnsys: 'Manual validation report PDF archive',
+    cloudSimScale: 'Static blog post validation comparisons',
+    luminaryNavier: 'Synthetic benchmark comparisons',
+  },
+  {
+    category: 'Verification & Code',
+    feature: 'Engineering Labelling Honesty',
+    aetherCfd: 'Explicit badge: 2D Browser · Educational / Benchmark grade',
+    traditionalAnsys: 'Full 3D certified industrial solver',
+    cloudSimScale: '3D cloud production CFD',
+    luminaryNavier: 'Marketing claims often blur surrogate vs true physics',
+  },
+  {
+    category: 'Data & Export',
+    feature: 'Excel Workbook Generation',
+    aetherCfd: 'One-click multi-sheet .xlsx with embedded charts & raw tensors',
+    traditionalAnsys: 'Complex text table export + manual macro scripting',
+    cloudSimScale: 'CSV dump or raw VTK file download',
+    luminaryNavier: 'Proprietary cloud web viewer export',
+  },
+  {
+    category: 'Data & Export',
+    feature: 'Deployment Cost & Accessibility',
+    aetherCfd: '100% Free · Runs on modern desktop/laptop browser',
+    traditionalAnsys: '$25,000+ / annual engineering license seat',
+    cloudSimScale: 'Core-hour billing ($500+ / month base)',
+    luminaryNavier: 'Enterprise enterprise GPU cloud tier',
+  },
+];
